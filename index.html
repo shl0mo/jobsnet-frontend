@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>JobsNet | Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./images/logo.svg" alt="Logo JobsNet">
+            <h1>Banco de talentos</h1>
+        </div>
+    </header>
+
+    <form action="/register" method="post">
+        <h3>DADOS PESSOAIS</h3>
+
+        <fieldset class="container-data">
+            <div>
+                <label for="name">Nome completo: <span class="required">*</span></label>
+                <input type="text" name="name" placeholder="Bill Gates" required />
+            </div>
+
+            <div>
+                <label for="role">Cargo pretendido: <span class="required">*</span></label>
+                <input type="text" name="role" placeholder="CEO da Microsoft" required />
+            </div>
+
+            <div>
+                <label for="birthDate">Data de nascimento <span class="required">*</span></label>
+                <input type="date" name="birthDate" required />
+            </div>
+
+            <div>
+                <label for="cpf">CPF <span class="required">*</span></label>
+                <input type="Number" name="cpf" id="cpf" placeholder="12345678901" required />
+                <span id="wrongCpf" style="display: none">Cpf inválido</span>
+            </div>
+
+            <div>
+                <label for="maritalStatus">Estado Civil <span class="required">*</span></label>
+                <select name="maritalStatus" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="single">Solteira(o)</option>
+                    <option value="married">Casada(o)</option>
+                    <option value="stableUnion">União estável</option>
+                    <option value="divorced">Divorciada(o)</option>
+                    <option value="widow">Viúva(o)</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="gender">Sexo <span class="required">*</span></label>
+                <select name="gender" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="feminine">Feminino</option>
+                    <option value="masculine">Masculino</option>
+                    <option value="other">Outro</option>
+                    <option value="undetermined">Prefiro não dizer</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="zipCode">Cep <span class="required">*</span></label>
+                <input type="number" name="zipCode" id="zipCode" placeholder="12345-678" required />
+                <span id="wrongCep" style="display: none">Cep inválido</span>
+            </div>
+
+            <div>
+                <label for="address">Endereço <span class="required">*</span></label>
+                <input type="text" name="address" id="address" placeholder="Rua dos Alfeneiros" required />
+            </div>
+
+            <div>
+                <label for="houseNumber">Número <span class="required">*</span></label>
+                <input type="number" name="houseNumber" placeholder="04" required />
+            </div>
+
+            <div>
+                <label for="houseComplement">Complemento</label>
+                <input type="text" name="houseComplement" placeholder="Fundos" />
+            </div>
+
+            <div>
+                <label for="neighborhood">Bairro <span class="required">*</span></label>
+                <input type="text" name="neighborhood" id="neighborhood" placeholder="Copacabana" required />
+            </div>
+
+            <div>
+                <label for="city">Cidade <span class="required">*</span></label>
+                <input type="text" name="city" id="city" placeholder="Rio de Janeiro" required />
+            </div>
+
+            <div>
+                <label for="uf">Estado <span class="required">*</span></label>
+                <input type="text" name="uf" id="uf" placeholder="RJ" required />
+            </div>
+
+            <div>
+                <label for="telephone1">Telefone <span class="required">*</span></label>
+                <input type="tel" name="telephone1" placeholder="(21) 91234-5678" required />
+            </div>
+
+            <div>
+                <label for="email">Seu melhor email: <span class="required">*</span></label>
+                <input type="text" name="email" placeholder="billgates@microsoft.com" required />
+            </div>
+
+        </fieldset>
+
+        <h3>REDES SOCIAIS</h3>
+
+        <fieldset class="container-social">
+            <div>
+                <label for="linkedin">LinkedIn</label>
+                <input type="url" name="linkedin" placeholder="linkedin.com/billgates">
+            </div>
+
+            <div>
+                <label for="github">GitHub</label>
+                <input type="url" name="github" placeholder="github.com/billgates">
+            </div>
+
+            <div>
+                <label for="facebook">Facebook</label>
+                <input type="url" name="facebook" placeholder="facebook.com/billgates">
+            </div>
+
+            <div>
+                <label for="twitter">Twitter</label>
+                <input type="url" name="twitter" placeholder="twitter.com/billgates">
+            </div>
+        </fieldset>
+
+        <button type="submit">Tudo pronto! Enviar <img src="./images/forward.svg" alt="avançar"></button>
+
+        <div class="onboarding">
+            <img src="./images/onboarding.svg" alt="Imagem de onboarding">
+        </div>
+    </form>
+</body>
+
+<script src="script.js"></script>
+
+</html>

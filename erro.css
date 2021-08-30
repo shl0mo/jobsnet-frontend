@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(63.18deg, #318FA6 0%, rgba(49, 143, 166, 0) 100%), linear-gradient(116.49deg, #DFF4FB 0%, rgba(223, 244, 251, 0) 99.51%), linear-gradient(180deg, #7757C6 0%, rgba(119, 87, 198, 0) 100%);
+    background-blend-mode: normal, darken, luminosity;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 150px 600px;
+    color: #DC9044;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 600px;
+}

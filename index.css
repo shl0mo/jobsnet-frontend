@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(63.18deg, #318FA6 0%, rgba(49, 143, 166, 0) 100%), linear-gradient(116.49deg, #DFF4FB 0%, rgba(223, 244, 251, 0) 99.51%), linear-gradient(180deg, #7757C6 0%, rgba(119, 87, 198, 0) 100%);
+    background-blend-mode: normal, darken, luminosity;
+}
+
+header {
+    margin: 0.9%;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+header div h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 48px;
+    color: #DC9044;
+}
+
+form {
+    margin: 0 auto;
+    width: 60%;
+    padding: 3em;
+    border-radius: 1em;
+    background-color: #DDE8EB;
+}
+
+.container-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    border: none;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.required {
+    color: red;
+}
+
+#wrongCpf {
+    color: red;
+}
+
+#wrongCep {
+    color: red;
+}
+
+.container-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    height: 68px;
+    background: #DC9044;
+    border-radius: 1em;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    font-weight: 600;
+    transition: 300ms;
+}
+
+button:hover {
+    background-color: #F7BF46;
+    color: black;
+}
+
+.onboarding {
+    display: flex;
+    justify-content: center;
+}
+
+
